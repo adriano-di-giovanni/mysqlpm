@@ -6,7 +6,7 @@ It is meant to be run on the same machine running the MySQL instance.
 
 ## Alpha
 
-This utility is in alpha. It works but **it hasn't been tested extensively**. Successful tests run on Mac OSX, Ubuntu/Debian using MySQL 5.6.x
+This utility is in alpha. It works but **it hasn't been tested extensively**. Successful tests run on Mac OSX, Ubuntu/Debian using MySQL 5.6.x.
 
 ## Installation
 

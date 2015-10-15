@@ -82,6 +82,9 @@ var
                 }
             ],
             function (error) {
+
+                global.pm.end();
+
                 if (error) {
                     throw error;
                 }
@@ -109,6 +112,9 @@ var
                 }
             ],
             function (error) {
+
+                global.pm.end();
+
                 if (error) {
                     throw error;
                 }
