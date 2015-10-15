@@ -41,18 +41,23 @@ var
                 return;
             }
         });
+
+        done();
     },
     getInstance = function () {
         var
             options = {
                 connection: {
-                    host: program.host,
+                    host: 'localhost',
                     user: program.user,
                     password: program.password
                 },
-                backupDir: program.dir
+                backupDir: program.dir,
+                isDebug: program.verbose
             },
             pm = MySQLPartitionManager.forge(options);
+
+        global.pm = pm;
 
         return pm;
     },
@@ -114,10 +119,10 @@ var
 
 program
     .version(pkg.version)
-    .option('-h, --host [name]', 'connect to host', 'localhost')
     .option('-u, --user <name>', 'user for login if not current user', username.sync())
     .option('-p, --password [name]', 'password to use when connecting to server')
-    .option('-d, --dir <name>', 'directory for partitions', resolveDir);
+    .option('-d, --dir <name>', 'directory for partitions', resolveDir)
+    .option('-v, --verbose', 'write more');
 
 program
     .command('backup <database> <table> <partitions...>')
