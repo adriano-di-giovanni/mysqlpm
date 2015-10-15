@@ -16,5 +16,20 @@
     "commander": "~2.9.0",
     "node-mysqlpm": "~0.1.0",
     "username": "~1.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriano-di-giovanni/mysqlpm.git"
+  },
+  "keywords": [
+    "node",
+    "mysql",
+    "partition",
+    "manager"
+  ],
+  "bugs": {
+    "url": "https://github.com/adriano-di-giovanni/mysqlpm/issues"
+  },
+  "homepage": "https://github.com/adriano-di-giovanni/mysqlpm#readme"
 }
