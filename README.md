@@ -20,16 +20,15 @@ $ npm install -g mysqlpm
 
   Commands:
 
-    backup|b <table> <partitions...>   backup partitions
-    restore|r <table> <partitions...>  restore partitions
+    backup|b <database> <table> <partitions...>   backup partitions
+    restore|r <database> <table> <partitions...>  restore partitions
 
   Options:
 
     -h, --help             output usage information
     -V, --version          output the version number
-    -h, --host [name]      connect to host
-    -u, --user <name>      user for login
+    -u, --user <name>      user for login if not current user
     -p, --password [name]  password to use when connecting to server
-    -D, --database <name>  database to use
     -d, --dir <name>       directory for partitions
+    -v, --verbose          write more
 ```
