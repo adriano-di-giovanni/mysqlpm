@@ -1,6 +1,0 @@
-[remote "mysql-master"]
-  url = ssh://root@95.110.215.59/srv/git-bare-repos/mysqlpm.git
-  fetch = +refs/heads/*:refs/remotes/mysql-master/*
-[remote "vm"]
-  url = ssh://root@192.168.10.101/srv/git-bare-repos/mysqlpm.git
-  fetch = +refs/heads/*:refs/remotes/vm/*
